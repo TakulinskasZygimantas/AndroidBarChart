@@ -1,0 +1,2 @@
+include ':app', ':chartviewlibrary', ':chartviewlibrary-debug', ':CustomChartFragment', ':ChartBar', ':chartviewlibrary-debug2', ':ChartBar2', ':ChartBar3', ':ChartBar4', ':ChartBar5', ':ChartBar6'
+rootProject.name='ComponentApp'
