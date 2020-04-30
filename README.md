@@ -122,3 +122,87 @@ dependencies {
 ```
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/12.png)
+
+## Example
+
+### activity_main.xml code
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="List of 10 Lithuania cities by population"
+        android:layout_margin="10dp"
+        android:textSize="32dp" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.chartviewlibrary.ChartView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+```
+
+### MainActivity.java code
+
+```
+package com.example.myapplication;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Bundle;
+import com.example.chartviewlibrary.BarValue;
+import com.example.chartviewlibrary.ChartView;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements ChartView.OnFragmentInteractionListener{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        List<BarValue> barValues = new ArrayList<>();
+
+        barValues.add(new BarValue(536.692f, Color.parseColor("#F2476B"), "Vilnius"));
+        barValues.add(new BarValue(312.120f, Color.parseColor("#FB654D"), "Kaunas"));
+        barValues.add(new BarValue(164.310f, Color.parseColor("#EC2C39"), "Klaipėda"));
+        barValues.add(new BarValue(107.086f, Color.parseColor("#AED8E6"), "Šiauliai"));
+        barValues.add(new BarValue(98.598f, Color.parseColor("#90EE90"), "Panevėžys"));
+
+        barValues.add(new BarValue(54.437f, Color.parseColor("#B17BAA"), "Alytus"));
+        barValues.add(new BarValue(36.628f, Color.parseColor("#6598C6"), "Marijampolė"));
+        barValues.add(new BarValue(33.281f, Color.parseColor("#F37248"), "Mažeikiai"));
+        barValues.add(new BarValue(29.031f, Color.parseColor("#C54B6C"), "Jonava"));
+        barValues.add(new BarValue(27.041f, Color.parseColor("#5784BA"), "Utena"));
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        chart.showValue(true);
+        chart.showLabels(true);
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+}
+```
+
+### App window
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/13.png)
