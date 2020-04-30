@@ -56,3 +56,5 @@ dependencies {
 ### Running App
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/7.png)
+
+## Customization And Methods
