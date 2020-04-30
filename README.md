@@ -203,6 +203,6 @@ public class MainActivity extends AppCompatActivity implements ChartView.OnFragm
 }
 ```
 
-### App window
+### Application window
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/13.png)
