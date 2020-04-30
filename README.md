@@ -58,3 +58,67 @@ dependencies {
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/7.png)
 
 ## Customization And Methods
+
+### Method: setChartPosition(String Position)
+
+```
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        
+        chart.setChartPosition("top");
+```
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/8.png)
+
+### Methods: setStroke(boolean value), setStrokeColor(int strokeColor)
+
+```
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        
+        chart.setStroke(true);
+        chart.setStrokeColor(Color.WHITE);
+```
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/9_.png)
+
+### Methods: showValue(boolean value), setValueTextColor(int textColor), setValueTextSize(int textSize)
+
+```
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        
+        chart.showValue(true);
+        chart.setValueTextColor(Color.WHITE);
+        chart.setValueTextSize(30)
+```
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/10_.png)
+
+### Method: setBarWidth(float barWidth)
+
+```
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        
+        chart.setBarWidth(120);
+```
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/11.png)
+
+### Method: showLabels(boolean labelText), setLabelTextColor(int labelTextColor)
+
+```
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        ChartView myFrag = (ChartView) fragmentManager.findFragmentById(R.id.fragment);
+        ChartView.MyGraphview chart = myFrag.createChart(barValues);
+        
+        chart.showLabels(true);
+        chart.setLabelTextColor(Color.MAGENTA);
+```
+
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/12.png)
