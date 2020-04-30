@@ -69,7 +69,7 @@ dependencies {
         chart.setChartPosition("top");
 ```
 
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/8.png)
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/8_2.png)
 
 ### Methods: setStroke(boolean value), setStrokeColor(int strokeColor)
 
