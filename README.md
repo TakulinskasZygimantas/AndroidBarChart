@@ -37,26 +37,22 @@ dependencies {
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/2.png)
 
-### Add the repository
+### Add the Repository
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/3.png)
 
-### Add the dependency and sync the project
+### Add the Dependency And Sync the Project
 
 ![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/4.png)
 
-### Add a view to a layout
+### Add a View To a Layout
 
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/3.png)
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/5.png)
 
-### Add Java code
+### Add Java Code And Run Project
 
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/4.png)
-
-### Build and run
-
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/3.png)
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/6.png)
 
 ### Running App
 
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/4.png)
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/7.png)
