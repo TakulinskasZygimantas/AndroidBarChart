@@ -43,7 +43,7 @@ dependencies {
 
 ### Add the Dependency And Sync the Project
 
-![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/4.png)
+![Image of Zygis](https://github.com/TakulinskasZygimantas/AndroidBarChart/blob/master/4_.png)
 
 ### Add a View To a Layout
 
